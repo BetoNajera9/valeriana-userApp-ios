@@ -10,7 +10,7 @@ El logo representa una doctora enfocada en atender a sus pacientes de la manera 
 
 ## Credenciales 🔑
 
-Correo: email@hotmail.com
+Correo: correo@hotmail.com
 Password: password
 
 ## Dependencias 📦
