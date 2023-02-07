@@ -1,0 +1,33 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (6.3.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, branch `version6-xcode13`)
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: d0494dd78f7adf2d3526fdf3267176553020c041
+    :git: https://github.com/onevcat/Kingfisher.git
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 1bcad10e1a8d7270181c41bb44fe3122b34a6180
+
+COCOAPODS: 1.11.3

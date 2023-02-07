@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="nunito.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DoctorViewCell" customModule="user_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U2o-k9-EwF">
+                        <rect key="frame" x="12" y="12" width="344" height="108"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2m3-P8-AcA">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_user" translatesAutoresizingMaskIntoConstraints="NO" id="265-ny-6E6">
+                                        <rect key="frame" x="4" y="4" width="78" height="78"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="78" id="PRP-6E-meb"/>
+                                            <constraint firstAttribute="width" secondItem="265-ny-6E6" secondAttribute="height" multiplier="1:1" id="z7v-jH-j8F"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.92941176469999998" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="265-ny-6E6" firstAttribute="centerX" secondItem="2m3-P8-AcA" secondAttribute="centerX" id="3e8-gB-GK4"/>
+                                    <constraint firstAttribute="height" constant="86" id="VNN-Vm-M44"/>
+                                    <constraint firstAttribute="width" constant="86" id="VmX-t8-QP6"/>
+                                    <constraint firstItem="265-ny-6E6" firstAttribute="centerY" secondItem="2m3-P8-AcA" secondAttribute="centerY" id="yGz-c2-7CT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="DA9-9D-I5b">
+                                <rect key="frame" x="161" y="0.0" width="183" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. {doctor_name}" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr3-1V-4wb">
+                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="22"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{job}" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPd-DB-cfl" customClass="CustomPaddingLabel" customModule="user_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="26" height="16.666666666666671"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.79607843140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="WWQ-VE-q8J">
+                                        <rect key="frame" x="0.0" y="50.666666666666657" width="183" height="33.333333333333343"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2tc-L9-Ani">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.333333333333329" height="33.333333333333336"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_heart" translatesAutoresizingMaskIntoConstraints="NO" id="dqt-0W-wnE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="XCY-fs-eus"/>
+                                                            <constraint firstAttribute="height" constant="24" id="v4I-QI-cov"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5XM-1Y-mnH">
+                                                        <rect key="frame" x="30" y="0.0" width="65.333333333333329" height="33.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popularidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk0-VH-6Bk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="65.333333333333329" height="16.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjI-WU-dFm">
+                                                                <rect key="frame" x="0.0" y="16.666666666666664" width="65.333333333333329" height="16.666666666666664"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="bse-36-Cmj">
+                                                <rect key="frame" x="101.33333333333331" y="0.0" width="81.666666666666686" height="33.333333333333336"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_star" translatesAutoresizingMaskIntoConstraints="NO" id="IIW-bh-9Ap">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="g92-Yn-Q6t"/>
+                                                            <constraint firstAttribute="height" constant="24" id="mYh-cm-qMG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RN9-jw-DgE">
+                                                        <rect key="frame" x="29.999999999999996" y="0.0" width="51.666666666666657" height="33.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViT-h4-yMH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="16.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Jm-L5D">
+                                                                <rect key="frame" x="0.0" y="16.666666666666664" width="51.666666666666664" height="16.666666666666664"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="U2o-k9-EwF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="OqS-iZ-ajZ"/>
+                <constraint firstItem="U2o-k9-EwF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="gtU-Hf-Beh"/>
+                <constraint firstAttribute="bottom" secondItem="U2o-k9-EwF" secondAttribute="bottom" constant="12" id="l5J-Eo-XYP"/>
+                <constraint firstAttribute="trailing" secondItem="U2o-k9-EwF" secondAttribute="trailing" constant="12" id="lBy-6n-glt"/>
+            </constraints>
+            <size key="customSize" width="395" height="159"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.75294117650000003" green="0.80392156859999997" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ivAvatar" destination="265-ny-6E6" id="WeS-oe-8AO"/>
+                <outlet property="lblName" destination="lr3-1V-4wb" id="hBn-mQ-nbB"/>
+                <outlet property="lblPopularity" destination="KjI-WU-dFm" id="MV5-Jd-2qb"/>
+                <outlet property="lblRank" destination="GFT-Jm-L5D" id="jTx-zV-414"/>
+                <outlet property="lblSpecialty" destination="WPd-DB-cfl" id="cX6-QF-Rbq"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="21"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="WPd-DB-cfl">
+            <size key="intrinsicContentSize" width="26" height="16.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icon_heart" width="24" height="22"/>
+        <image name="icon_star" width="24" height="22"/>
+        <image name="ph_user" width="78" height="78"/>
+    </resources>
+</document>
